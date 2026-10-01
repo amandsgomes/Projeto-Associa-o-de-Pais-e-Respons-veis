@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associação de Pais e Responsáveis</title>
+    <link rel="stylesheet" href="CSS/página inicial.css">
+    <script src="JS/página inicial.js" defer></script>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <h3>Menu</h3>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#associacao">A Associação</a>
+            <a href="#acoes">Nossas Ações</a>
+            <a href="#escolas">Escolas</a>
+            <a href="#ajudar">Como Ajudar</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </aside>
+
+    <header>
+        <img src="images/logo.png" alt="logo da associação">
+        <h1>Associação de Pais e Responsáveis</h1>
+        <p>APRS</p>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo à Associação</h2>
+            <p>Trabalhamos para apoiar escolas e famílias da nossa região.</p>
+        </section>
+
+        <section id="associacao">
+            <h2>A Associação</h2>
+            <article>
+                <p>A Associação de Pais e Responsáveis é uma iniciativa formada por famílias que acreditam que a união e a solidariedade podem transformar a realidade das escolas e das comunidades...</p>
+                <p>O trabalho busca fortalecer as instituições de ensino...</p>
+                <p>Mais do que arrecadar e distribuir recursos...</p>
+                <p>A Associação de Pais e Responsáveis acredita que cuidar da escola...</p>
+            </article>
+        </section>
+
+        <section id="acoes">
+            <h2>Nossas Ações</h2>
+            <div class="card-container">
+                <div class="card">
+                    <span class="badge badge-sucesso">Concluído</span>
+                    <h3>Campanha do Agasalho</h3>
+                    <p>Arrecadação de agasalhos realizada nas escolas parceiras.</p>
+                </div>
+                <div class="card">
+                    <span class="badge badge-alerta">Em Andamento</span>
+                    <h3>Arrecadação de Alimentos</h3>
+                    <p>Doação de cestas básicas para famílias cadastradas.</p>
+                </div>
+                <div class="card">
+                    <span class="badge badge-urgente">Urgente</span>
+                    <h3>Reforma da Biblioteca</h3>
+                    <p>Necessitamos de voluntários e materiais de pintura.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="escolas">
+            <h2>Escolas</h2>
+            <p>Conheça as instituições parceiras da nossa comunidade.</p>
+        </section>
+
+        <section id="ajudar">
+            <h2>Como Ajudar</h2>
+            <p>Apoie os projetos da nossa associação de forma rápida e segura.</p>
+
+            <!-- Card de Doação com Cartão -->
+            <div class="card-doacao">
+                <h3>Fazer uma Doação</h3>
+                <p class="card-subtitulo">Preencha seus dados para gerar o pagamento:</p>
+
+                <form class="form-doacao">
+                    <div class="form-group">
+                        <label for="nome-doador">Nome Completo:</label>
+                        <input type="text" id="nome-doador" required placeholder="Digite seu nome completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email-doador">E-mail para Recibo:</label>
+                        <input type="email" id="email-doador" required placeholder="seuemail@exemplo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="valor-doacao">Valor da Doação (R$):</label>
+                        <input type="number" id="valor-doacao" min="5" step="5" required placeholder="Ex: 50">
+                    </div>
+
+                    <hr class="divisor-card">
+
+                    <h4>Dados do Cartão de Crédito</h4>
+
+                    <div class="form-group">
+                        <label for="numero-cartao">Número do Cartão:</label>
+                        <input type="text" id="numero-cartao" required placeholder="0000 0000 0000 0000" maxlength="19">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group flex-1">
+                            <label for="validade-cartao">Validade:</label>
+                            <input type="text" id="validade-cartao" required placeholder="MM/AA" maxlength="5">
+                        </div>
+                        <div class="form-group flex-1">
+                            <label for="cvv-cartao">CVV:</label>
+                            <input type="text" id="cvv-cartao" required placeholder="123" maxlength="4">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-doar">
+                        💳 Confirmar e Gerar Pagamento
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form class="form-contato">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" required placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail de Contato:</label>
+                    <input type="email" id="email" required placeholder="seuemail@exemplo.com">
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <div class="toast">
+        ℹ️ Nova reunião da associação agendada para este mês!
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h2>Associação de Pais e Responsáveis</h2>
+                <p>Unindo famílias para fortalecer nossas escolas e transformar nossa comunidade.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <p>Email: associacaodepais@gmail.com</p>
+                <p>Instagram: @associacaodepais</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Associação de Pais e Responsáveis</p>
+            <p>Projeto acadêmico — Análise e Desenvolvimento de Sistemas</p>
+        </div>
+    </footer>
+
+</body>
+</html>
